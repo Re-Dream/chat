@@ -1,9 +1,10 @@
 
 if SERVER then
-	AddCSLuaFile("chat/main.lua")
+	AddCSLuaFile("chat/client/main.lua")
+	include("chat/server/main.lua")
 end
 
 if CLIENT then
-	include("chat/main.lua")
+	include("chat/client/main.lua")
 end
 
